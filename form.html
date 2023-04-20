@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Form</title>
+    <h1>thanks for stopping by!</h1>
 </head>
 <body>
     <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="container">
+            <label for="name" class="nameForm">Your name here:</label>
+            <input type="name" class="name" id="nameInput" aria-describedby="nameHelp">
+            <button type="submit" class="submitBtn">Submit</button>
           
-          <button class="btn btn-primary" type="submit">Button</button>
+            <label for="emailInput" class="emailForm">Email address</label>
+            <input type="email" class="email" id="emailInput" aria-describedby="emailHelp">
+            <button type="submit" class="submitBtn">Submit</button>
         
         </div>
     </form>
 </body>
+<footer>
+    <a href="./index.html">Back to the forest</a>
+</footer>
 </html>
