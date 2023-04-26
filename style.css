@@ -1,7 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+
+
 .container {
     position: relative;
     display: flex;
@@ -27,6 +25,7 @@ body {
 }
 
 .circle {
+    /* absolute */
     position: absolute;
     width: 80px;
     height: 80px;
@@ -83,14 +82,17 @@ body {
 }
 
 #figure-1{
+    /* absolute */
     position: absolute;
     z-index: 1;
     left: 300px;
     bottom: 0px;
-    width:150px
+    width:150px;
+
 }
 
 #figure-2{
+    /* abso */
     position: absolute;
     bottom: 0px;
     width:300px;
@@ -98,6 +100,7 @@ body {
 }
 
 .triangle{
+    /* abso */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -110,31 +113,39 @@ body {
 .triangle-small {
     width: 0;
     height: 0;
-    border-bottom: 200px solid #c9e265;
+    border-bottom: 100px solid #c9e265;
     border-left: 100px solid transparent;
     border-right:100px solid transparent;
-    z-index: 2;
+    z-index: 3;
 }
 
 .triangle-big {
     width: 0;
     height: 0;
-    border-bottom:350px solid #008036;
+    border-bottom: 250px solid #008036;
     border-left: 150px solid transparent;
     border-right:150px solid transparent;
     right: calc(50% - 250px);
+    z-index: 2;
 }
 
-.house {
-    position: absolute;
+/* .house {
+    position: relative;
     display: flex;
-    justify-content:right;
+    align-items: stretch;
     color: rgb(240, 11, 198);
     height: 150px;
     width: 150px;
     border: 9px dotted rgb(221, 11, 240);
     background-color: rgb(231, 161, 206);
     z-index: 3;
+} */
+
+.lowerBox{
+    position: relative;
+    display: flex;
+    height: 50%;
+    background-color: #065255;
 }
 
 footer {
@@ -142,4 +153,47 @@ footer {
     position: relative;
     height: 100px;
     z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  body {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-device-width: 480px){
+
+/* orientation: portrait (max-device-width: 480px)*/
+/* and (orientation: portrait) { */
+  body {
+    width: 400px;
+    height: 200px;
+    
+  }
+}
+
+
+.submitBtn {
+    background-color: rgb(41, 117, 117);
+    border: none;
+    color: rgb(31, 2, 2);
+    padding:  15px 32px;
+    text-align: center;
+    text-decoration: dotted;
+    display: inline-block;
+    font-size: 16px;
+    width: 300px;
+}
+
+input {
+    width: 500px;
 }
