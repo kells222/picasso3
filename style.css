@@ -82,7 +82,8 @@
 }
 
 #figure-1{
-    /* absolute */
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     z-index: 1;
     left: 300px;
@@ -92,7 +93,8 @@
 }
 
 #figure-2{
-    /* abso */
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0px;
     width:300px;
@@ -100,7 +102,7 @@
 }
 
 .triangle{
-    /* abso */
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -171,7 +173,6 @@ and (max-device-width: 1024px) {
 }
 
 @media screen and (max-device-width: 480px){
-
 /* orientation: portrait (max-device-width: 480px)*/
 /* and (orientation: portrait) { */
   body {
@@ -184,16 +185,25 @@ and (max-device-width: 1024px) {
 
 .submitBtn {
     background-color: rgb(41, 117, 117);
-    border: none;
+    border: black;
     color: rgb(31, 2, 2);
     padding:  15px 32px;
     text-align: center;
     text-decoration: dotted;
     display: inline-block;
     font-size: 16px;
-    width: 300px;
+    width: 250px;
 }
 
 input {
-    width: 500px;
+    width: 400px;
+}
+
+.thanks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: #19989c;
+    
 }

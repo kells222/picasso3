@@ -1,0 +1,1 @@
+alert('thanks have a great day')
