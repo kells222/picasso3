@@ -10,20 +10,29 @@
     <h1>thanks for stopping by!</h1>
 </head>
 <body>
-    <form>
-        <div class="thanks">
-            <label for="name" class="nameForm">Your name here:</label>
-           
-            <input type="name" class="name" id="nameInput" aria-describedby="nameHelp">          
-           
-            <label for="emailInput" class="emailForm">Email address</label>
+<form>
+<div class="thanks">
+        
+        <label for="name" class="nameForm">Your name here:</label>
+        
+        <input type="name" class="name" id="nameInput" aria-describedby="nameHelp">          
+        
+        <label for="emailInput" class="emailForm">Email address</label>
+        
+        <input type="email" class="email" id="emailInput" aria-describedby="emailHelp">
             
-            <input type="email" class="email" id="emailInput" aria-describedby="emailHelp">
-           <a href="./index.html">
-            <button type="submit" class="submitBtn">Submit</button>
-            </a>
-        </div>
-    </form>
+    <div>
+        <!-- <button type="submit" class="submitBtn">Submit</button> -->
+        <script>
+            function clickAlert() {
+                alert("thank you for your input!");
+            }
+        </script>
+            
+        <input type="button" class="submitBtn" onclick="clickAlert()" value="Submit">
+    </div>
+</div>
+</form>
     
 </body>
 <footer>
